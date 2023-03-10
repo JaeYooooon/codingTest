@@ -1,15 +1,9 @@
-import java.util.*;
+import java.util.stream.IntStream;
 
 public class Solution {
     public int solution(int n) {
-        int answer = 0;
-        
-        while(n > 0){
-            answer += n % 10;
-            n /= 10;
-        }
-
-
-        return answer;
+         return IntStream.rangeClosed(1, String.valueOf(n).length())
+             .map(i -> (n / (int)Math.pow(10, i - 1)) % 10)
+             .sum();
     }
 }
