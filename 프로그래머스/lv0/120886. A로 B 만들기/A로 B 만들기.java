@@ -6,6 +6,6 @@ class Solution {
         Arrays.sort(a);
         Arrays.sort(b);
 
-        return new String(a).equals(new String(b)) ? 1 :0;
+        return new String(a).equals(new String(b)) ? 1 : 0;
     }
 }
