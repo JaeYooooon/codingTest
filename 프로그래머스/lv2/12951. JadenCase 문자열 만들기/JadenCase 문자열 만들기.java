@@ -7,7 +7,6 @@ class Solution {
     	String[] arr = s.split(" ");
     	for(int i=0; i<arr.length; i++) {
     		String now = arr[i];
-    		
     		if(arr[i].length() == 0) {
     			answer += " ";
     		} 
