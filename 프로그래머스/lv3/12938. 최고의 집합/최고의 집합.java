@@ -3,13 +3,13 @@ class Solution {
         int[] answer = new int[n];
 
         int cnt = n;
-        for(int i=0; i<n; i++) {
-            answer[i] = s/cnt;
-            s -= s/cnt;
+        for(int i = 0; i < n; i++) {
+            answer[i] = s / cnt;
+            s -= s / cnt;
             cnt--;
         }
 
-        if(answer[0]==0) {
+        if(answer[0] == 0) {
             answer = new int[]{-1};
         }
 
