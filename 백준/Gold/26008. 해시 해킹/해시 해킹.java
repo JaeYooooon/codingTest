@@ -9,8 +9,6 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
-        int A = Integer.parseInt(st.nextToken());
-        int H = Integer.parseInt(br.readLine());
         long result = 1;
         for (int i = 0; i < N - 1; i++) {
             result = (result * M) % 1000000007;
