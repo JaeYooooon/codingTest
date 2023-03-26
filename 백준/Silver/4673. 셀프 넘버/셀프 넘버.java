@@ -19,7 +19,6 @@ public class Main {
     }
 
 
-
     public static int d(int number){
         int sum = number;
 
