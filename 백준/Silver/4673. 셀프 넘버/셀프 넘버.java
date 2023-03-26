@@ -18,7 +18,6 @@ public class Main {
         System.out.println(sb);
     }
 
-
     public static int d(int number){
         int sum = number;
 
