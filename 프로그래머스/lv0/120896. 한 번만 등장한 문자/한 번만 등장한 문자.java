@@ -1,18 +1,21 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.stream.Collectors;
 
 class Solution {
     public String solution(String s) {
-
-        HashSet<String> set = new HashSet<>();
-
-        for (int i = 0; i < s.length(); i++) {
-            String replace = s.replace(s.charAt(i) + "", "");
-            if(s.length() - replace.length() == 1){
-                set.add(s.charAt(i)+"");
+        char[] chars = s.toCharArray();
+        HashMap<Character, Integer> map = new HashMap<>();
+        for(char c : chars){
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        List<String> list = new ArrayList<>();
+        for(char key : map.keySet()){
+            if(map.get(key) == 1){
+                list.add(String.valueOf(key));
             }
         }
-        ArrayList<String> list = new ArrayList<>(set);
-        Collections.sort(list);
-        return String.join("", list);
+        return list.stream().sorted().collect(Collectors.joining());
     }
 }
