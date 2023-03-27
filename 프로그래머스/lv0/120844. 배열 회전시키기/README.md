@@ -1,10 +1,10 @@
 # [level 0] 배열 회전시키기 - 120844 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120844) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120844?language=java) 
 
 ### 성능 요약
 
-메모리: 72 MB, 시간: 0.02 ms
+메모리: 74.6 MB, 시간: 0.03 ms
 
 ### 구분
 
