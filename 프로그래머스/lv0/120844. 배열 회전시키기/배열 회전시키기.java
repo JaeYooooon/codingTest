@@ -15,6 +15,7 @@ class Solution {
                     answer[i - 1] = numbers[i];
                 }
             }
+            
         }
         return answer;
     }
