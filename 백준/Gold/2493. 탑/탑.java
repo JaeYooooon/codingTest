@@ -49,7 +49,6 @@ public class Main {
                 }
             }
         }
-
         bw.write(answer.toString() + "\n");
         bw.flush();
         bw.close();
