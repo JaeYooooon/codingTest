@@ -36,7 +36,6 @@ public class Main {
                         stack.push(new Top(i, height));
                         break;
                     }
-
                     Top top = stack.peek();
 
                     if (top.height > height) { // peek한 탑의 높이가 현재 탑의 높이보다 높다면
