@@ -19,13 +19,11 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
         int N = Integer.parseInt(br.readLine());
-
         Stack<Top> stack = new Stack<>();
         StringBuilder answer = new StringBuilder();
         st = new StringTokenizer(br.readLine());
         for (int i = 1; i <= N; i++) {
             int height = Integer.parseInt(st.nextToken());
-
             if (stack.isEmpty()) { // 스택이 비어있다면, 0을 출력하고 탑을 push
                 answer.append("0 ");
                 stack.push(new Top(i, height));
@@ -37,7 +35,6 @@ public class Main {
                         break;
                     }
                     Top top = stack.peek();
-
                     if (top.height > height) { // peek한 탑의 높이가 현재 탑의 높이보다 높다면
                         answer.append(top.num + " "); // peek한 탑의 번호를 출력하고
                         stack.push(new Top(i, height)); // 현재 탑을 스택에 push
