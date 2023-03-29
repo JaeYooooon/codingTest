@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Stack;
 import java.util.StringTokenizer;
-
 class Top {
     int num;
     int height;
@@ -15,7 +14,6 @@ class Top {
     }
 }
 public class Main {
-
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
