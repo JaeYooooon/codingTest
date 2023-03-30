@@ -9,10 +9,8 @@ public class Main {
 
 	static StringBuilder sb = new StringBuilder();
 	static boolean[] check;
-	static int[][] arr;
-	
+	static int[][] arr;	
 	static int node, line, start;
-	
 	static Queue<Integer> q = new LinkedList<>();
 
 	public static void main(String[] args) throws IOException {
