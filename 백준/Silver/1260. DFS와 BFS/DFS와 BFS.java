@@ -31,7 +31,6 @@ public class Main {
 			
 			arr[a][b] = arr[b][a] =  1;	
 		}
-			//sb.append("\n");
 			dfs(start);
 			sb.append("\n");
 			check = new boolean[node+1];
@@ -52,7 +51,6 @@ public class Main {
 		}
 		
 	}
-	
 	public static void bfs(int start) {
 		q.add(start);
 		check[start] = true;
