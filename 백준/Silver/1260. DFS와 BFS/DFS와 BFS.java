@@ -25,7 +25,6 @@ public class Main {
 			StringTokenizer str = new StringTokenizer(br.readLine());			
 			int a = Integer.parseInt(str.nextToken());
 			int b = Integer.parseInt(str.nextToken());
-			
 			arr[a][b] = arr[b][a] =  1;	
 		}
 			dfs(start);
