@@ -10,8 +10,7 @@ class Solution {
             } else{
                 answer[i] = x;
             }
-        }
-        
+        }     
         return answer;
     }
 }
