@@ -16,6 +16,7 @@ class Solution {
             }
             if(queue2.size() != 0 && queue2.peek().equals(text)){
                 queue2.poll();
+                
                 continue;
             }
             return "No";
