@@ -12,6 +12,7 @@ class Solution {
         for(String text : goal){
             if(queue1.size() != 0 && queue1.peek().equals(text)){
                 queue1.poll();
+                
                 continue;
             }
             if(queue2.size() != 0 && queue2.peek().equals(text)){
