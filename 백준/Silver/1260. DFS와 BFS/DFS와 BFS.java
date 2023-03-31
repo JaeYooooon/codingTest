@@ -31,7 +31,6 @@ public class Main {
 			sb.append("\n");
 			check = new boolean[node+1];
 			bfs(start);
-			
 			System.out.println(sb);
 		
 		}
