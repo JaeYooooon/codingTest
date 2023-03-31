@@ -14,8 +14,7 @@ public class Main {
 	static Queue<Integer> q = new LinkedList<>();
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		node = Integer.parseInt(st.nextToken());
 		line = Integer.parseInt(st.nextToken());
