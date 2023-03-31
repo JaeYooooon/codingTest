@@ -6,7 +6,6 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main {
-
 	static StringBuilder sb = new StringBuilder();
 	static boolean[] check;
 	static int[][] arr;	
