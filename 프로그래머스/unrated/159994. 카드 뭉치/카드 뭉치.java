@@ -8,6 +8,7 @@ class Solution {
         
         Queue<String> queue1 = new LinkedList<>(Arrays.asList(cards1));
         Queue<String> queue2 = new LinkedList<>(Arrays.asList(cards2));
+        
         for(String text : goal){
             if(queue1.size() != 0 && queue1.peek().equals(text)){
                 queue1.poll();
