@@ -22,8 +22,7 @@ public class Main {
 		arr = new int[node+1][node+1];
 		check = new boolean[node+1];	
 		for(int i = 0 ; i < line ; i ++) {
-			StringTokenizer str = new StringTokenizer(br.readLine());
-			
+			StringTokenizer str = new StringTokenizer(br.readLine());			
 			int a = Integer.parseInt(str.nextToken());
 			int b = Integer.parseInt(str.nextToken());
 			
