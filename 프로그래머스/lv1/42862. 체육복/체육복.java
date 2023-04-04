@@ -1,8 +1,7 @@
 import java.util.Arrays;
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
-        int answer = n - lost.length;
-      
+        int answer = n - lost.length;      
         Arrays.sort(lost);
         Arrays.sort(reserve);
         
