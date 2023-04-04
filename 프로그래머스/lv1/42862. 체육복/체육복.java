@@ -16,7 +16,6 @@ class Solution {
                 }
             }
         }
-        
         for(int i = 0; i < lost.length; i++){
             for(int j = 0; j < reserve.length; j++){
                 if((lost[i] - 1 == reserve[j]) || (lost[i] + 1 == reserve[j])){
