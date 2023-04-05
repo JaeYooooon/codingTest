@@ -17,6 +17,7 @@ public class Main {
 		node = Integer.parseInt(st.nextToken());
 		line = Integer.parseInt(st.nextToken());
 		start= Integer.parseInt(st.nextToken());	
+		
 		arr = new int[node+1][node+1];
 		check = new boolean[node+1];	
 		for(int i = 0 ; i < line ; i ++) {
