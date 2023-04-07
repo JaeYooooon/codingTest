@@ -12,7 +12,7 @@ class Solution {
         long mid ;
         long sum = 0;
         while(start <= end) {
-            mid = (start + end)/2;
+            mid = (start + end) / 2;
             sum = 0;
             for(int time : times) {
                 sum += mid / time;
