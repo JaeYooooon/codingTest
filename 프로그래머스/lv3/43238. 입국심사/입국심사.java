@@ -2,8 +2,7 @@ import java.util.*;
 class Solution {
     public static long solution(int n, int[] times) {
         long answer = Long.MAX_VALUE;       
-        Arrays.sort(times);
-        
+        Arrays.sort(times);    
         long start = times[0];
         long end = (long)times[times.length - 1] * (long)n;
         
