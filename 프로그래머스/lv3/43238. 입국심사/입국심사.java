@@ -8,7 +8,7 @@ class Solution {
         
         
         long mid ;
-        long sum = 0;  
+        long sum = 0;   
         while(start <= end) {
             mid = (start + end) / 2;
             sum = 0;
