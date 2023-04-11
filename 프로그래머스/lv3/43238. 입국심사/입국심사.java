@@ -13,7 +13,7 @@ class Solution {
             mid = (start + end) / 2;
             sum = 0;
             for(int time : times) {
-                sum += mid / time;
+                sum += mid / time; 
             }
             
             if(sum >= n) {
