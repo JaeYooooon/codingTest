@@ -6,7 +6,7 @@ class Solution {
         long start = times[0];
         long end = (long)times[times.length - 1] * (long)n;
         
-        
+         
         long mid ;
         long sum = 0; 
         while(start <= end) { 
