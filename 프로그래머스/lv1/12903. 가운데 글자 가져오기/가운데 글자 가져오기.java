@@ -10,6 +10,7 @@ class Solution {
             answer += s.charAt(s.length() / 2);
         }
 
+        
         return answer;
     }
 }
