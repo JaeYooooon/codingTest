@@ -14,7 +14,7 @@ public class Main {
         int[] arr = new int[N];
         
         for (int i = 0; i < N; i++) { 
-            arr[i] = Integer.parseInt(st.nextToken());
+            arr[i] = Integer.parseInt(st.nextToken()); 
         }
         
         Arrays.sort((arr));
