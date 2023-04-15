@@ -15,6 +15,7 @@ public class Main {
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
+        
         Arrays.sort((arr));
         int res = 1;
         for (int i = 0; i < N; i++) {
