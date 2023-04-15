@@ -12,7 +12,7 @@ public class Main {
         int N = Integer.parseInt(st.nextToken()); 
         st = new StringTokenizer(br.readLine(), " ");
         int[] arr = new int[N]; 
-        
+         
         for (int i = 0; i < N; i++) { 
             arr[i] = Integer.parseInt(st.nextToken()); 
         }
