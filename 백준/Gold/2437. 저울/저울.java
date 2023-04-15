@@ -18,6 +18,7 @@ public class Main {
         }
         
         Arrays.sort((arr));
+        
         int res = 1;
         for (int i = 0; i < N; i++) {
             if(res < arr[i]){
