@@ -11,7 +11,7 @@ class Solution {
             if(info[0].equals("Leave")){        
                 continue;
             } else if(info[0].equals("Enter")){ 
-                idMap.put(info[1], info[2]); 
+                idMap.put(info[1], info[2]);  
             } else {                            
                 idMap.put(info[1], info[2]);
                 cnt++;
