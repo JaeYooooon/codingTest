@@ -18,7 +18,7 @@ class Solution {
             }
         }
         
-        String[] answer = new String[record.length - count];
+        String[] answer = new String[record.length - cnt];
         int idx = 0;
         
         for(int i = 0; i < record.length; i++){
