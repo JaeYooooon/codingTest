@@ -14,7 +14,7 @@ class Solution {
                 idMap.put(info[1], info[2]);
             } else {                            
                 idMap.put(info[1], info[2]);
-                count++;
+                cnt++;
             }
         }
         
