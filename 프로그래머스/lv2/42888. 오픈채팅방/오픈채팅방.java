@@ -22,7 +22,7 @@ class Solution {
         
         int idx = 0;
         
-        for(int i = 0; i < record.length; i++){
+        for(int i = 0; i < record.length; i++){ 
             String[] info = record[i].split(" ");
             String nickname = idMap.get(info[1]);
             
