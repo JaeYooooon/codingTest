@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public String[] solution(String[] record) {
         Map<String, String> idMap = new HashMap<>();
-        int count = 0; 
+        int cnt = 0; 
         
         for(int i = 0; i < record.length; i++){
             String[] info = record[i].split(" ");
