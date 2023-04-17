@@ -8,7 +8,7 @@ class Solution {
         for(int i = 0; i < record.length; i++){
             String[] info = record[i].split(" ");
             
-            if(info[0].equals("Leave")){        
+            if(info[0].equals("Leave")){         
                 continue;
             } else if(info[0].equals("Enter")){ 
                 idMap.put(info[1], info[2]);  
