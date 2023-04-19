@@ -12,7 +12,6 @@ class Solution {
             babbling[i] = babbling[i].replace("woo", " ");
             babbling[i] = babbling[i].replace("ma", " ");
             babbling[i] = babbling[i].replace(" ", "");
-
             if(babbling[i].length()  == 0) answer++;
         }
         return answer;
