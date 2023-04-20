@@ -20,6 +20,8 @@ public class Main {
             }
             ans += (cnt * (n - cnt) * (1L << i));
         }
+        
         System.out.println(ans);
+        
     }
 }
