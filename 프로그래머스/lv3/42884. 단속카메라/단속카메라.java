@@ -8,7 +8,8 @@ class Solution {
         for(int[] route : routes){
             if(camera < route[0]){
                 camera = route[1];
-                cnt++;
+                
+                cnt++;             
             }
         }
         return cnt;
