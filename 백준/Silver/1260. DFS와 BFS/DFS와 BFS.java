@@ -15,6 +15,7 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 		StringTokenizer st = new StringTokenizer(br.readLine());
+		
 		node = Integer.parseInt(st.nextToken());
 		line = Integer.parseInt(st.nextToken());
 		start= Integer.parseInt(st.nextToken());	
