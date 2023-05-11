@@ -14,6 +14,7 @@ public class Main {
         for(int i = 2; i < pisano; i++){
             arr[i] = (arr[i - 1] + arr[i - 2]) % 1000000;
         }
+        
         System.out.println(arr[(int)n]);
     }
 }
