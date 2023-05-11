@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int pisano = 1500000;
+        
         long n = sc.nextLong() % pisano;  
         long[] arr = new long[pisano];
         
