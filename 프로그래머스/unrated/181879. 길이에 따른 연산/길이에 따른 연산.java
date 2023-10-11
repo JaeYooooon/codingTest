@@ -1,12 +1,8 @@
-import java.util.Arrays;
+import java.util.stream.IntStream;
+
 class Solution {
     public int solution(int[] num_list) {
-        int answer;
-        if(num_list.length >= 11){
-            answer = Arrays.stream(num_list).sum();
-        }else{
-            answer = Arrays.stream(num_list).reduce(1, (x, y) -> x * y);
-        }
-        return answer;
+        IntStream stream = IntStream.of(num_list);
+        return num_list.length > 10 ? stream.sum() : stream.reduce(1, (a, b) -> a * b);
     }
 }
