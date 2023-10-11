@@ -1,15 +1,11 @@
 import java.util.Arrays;
 class Solution {
     public int solution(int[] num_list) {
-        int answer = 0;
+        int answer;
         if(num_list.length >= 11){
             answer = Arrays.stream(num_list).sum();
         }else{
-            int res = 1;
-            for(int num : num_list){
-                res *= num;
-            }
-            answer += res;
+            answer = Arrays.stream(num_list).reduce(1, (x, y) -> x * y);
         }
         return answer;
     }
