@@ -1,9 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.Arrays;
 
 public class Main {
   public static void main(String[] args) throws IOException {
@@ -11,27 +9,30 @@ public class Main {
 
     int N = Integer.parseInt(br.readLine());
 
-    List<String> list = new ArrayList<>();
-    HashSet<String> uniqueWords = new HashSet<>();
+    String[] arr = new String[N];
 
     for (int i = 0; i < N; i++) {
-      String word = br.readLine();
-      if (!uniqueWords.contains(word)) {
-        list.add(word);
-        uniqueWords.add(word);
-      }
+      arr[i] = br.readLine();
     }
 
-    list.sort((a, b) -> {
-      if (a.length() != b.length()) {
-        return Integer.compare(a.length(), b.length());
-      } else {
-        return a.compareTo(b);
+    Arrays.sort(arr, (s1, s2) -> {
+      if (s1.length() == s2.length()) {
+        return s1.compareTo(s2);
+      }
+      else {
+        return s1.length() - s2.length();
       }
     });
 
-    for (String s : list) {
-      System.out.println(s);
+    StringBuilder sb = new StringBuilder();
+
+    sb.append(arr[0]).append('\n');
+
+    for (int i = 1; i < N; i++) {
+      if (!arr[i].equals(arr[i - 1])) {
+        sb.append(arr[i]).append('\n');
+      }
     }
+    System.out.println(sb);
   }
 }
