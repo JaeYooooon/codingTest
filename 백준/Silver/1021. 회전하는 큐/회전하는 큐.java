@@ -1,44 +1,68 @@
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.IOException;
 
-import java.util.*;
-import java.util.stream.IntStream;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        LinkedList<Integer> deque = new LinkedList<>();
-        int cnt = 0;
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int N = Integer.parseInt(st.nextToken());	// 큐의 크기
-        int M = Integer.parseInt(st.nextToken());	// 뽑으려는 숫자의 개수
-        IntStream.rangeClosed(1, N).forEach(x -> deque.add(x));
-        st = new StringTokenizer(br.readLine(), " ");
-        int[] arr = new int[M];	// 뽑고자 하는 수를 담은 배열
-        for(int i = 0; i < M; i++) {
-            arr[i] = Integer.parseInt(st.nextToken());
-        }
-        int idx = 0;	// 뽑아내려는 원소의 인덱스
-        while(idx < M) {
-            int num = arr[idx];	// 뽑아내려는 원소
-            int pos = deque.indexOf(num);	// 뽑아내려는 원소의 현재 위치
-            int size = deque.size();
 
-            if(pos == 0) {	// 현재 가장 앞에 있는 숫자를 뽑아내는 경우
-                deque.pollFirst();
-                idx++;
-            } else if(pos <= size / 2) {	// 뽑으려는 숫자가 현재 앞쪽에 있는 경우
-                deque.offerLast(deque.pollFirst());
-                cnt++;
-            } else {	// 뽑으려는 숫자가 현재 뒤쪽에 있는 경우
-                deque.offerFirst(deque.pollLast());
-                cnt++;
-            }
-        }
-        System.out.println(cnt);
+  public static void main(String[] args) throws IOException {
 
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+    LinkedList<Integer> deque = new LinkedList<Integer>();
 
+    int count = 0;	
+
+    StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+    int N = Integer.parseInt(st.nextToken());	
+    int M = Integer.parseInt(st.nextToken());	
+
+    for(int i = 1; i <= N; i++) {
+      deque.offer(i);
     }
+
+    int[] seq = new int[M];	
+
+    st = new StringTokenizer(br.readLine(), " ");
+    for(int i = 0; i < M; i++) {
+      seq[i] = Integer.parseInt(st.nextToken());
+    }
+
+
+    for(int i = 0; i < M; i++) {
+
+      int target_idx = deque.indexOf(seq[i]);
+      int half_idx;
+      if(deque.size() % 2 == 0) {
+        half_idx = deque.size() / 2 - 1;
+      }
+      else {
+        half_idx = deque.size() / 2;
+      }
+
+
+      if(target_idx <= half_idx) {
+        for(int j = 0; j < target_idx; j++) {
+          int temp = deque.pollFirst();
+          deque.offerLast(temp);
+          count++;
+        }
+      }
+      else {	
+        for(int j = 0; j < deque.size() - target_idx; j++) {
+          int temp = deque.pollLast();
+          deque.offerFirst(temp);
+          count++;
+        }
+
+      }
+      deque.pollFirst();	
+    }
+
+    System.out.println(count);
+
+
+  }
 }
